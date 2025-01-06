@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <h1 class="navbar-brand">Vaishnavi Gawale</h1>
+            <nav>
+                <ul class="navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="#group">Awards</a></li>
+                    <li><a href="#home">Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<div class="containerProject">
+        <h1>Projects</h1>
+
+        <div class="project">
+            <div class="image">
+                <img src="img/Customer1.png" alt="Publication 1 Image">
+            </div>
+            <div class="details">
+                <h2>Artificial Neural Network: Bank Customer Churn Prediction Analysis using Deep Learning</h2>
+                <p>
+                  The Bank Customer Churn Prediction project aims to identify customers likely to leave the bank, enabling proactive retention strategies. The dataset includes features such as customer demographics,
+                    credit score, account balance, and tenure with the bank. An Artificial Neural Network model was implemented using a Sequential neural network with two hidden layers to classify customers as "churning" or "non-churning.
+                     The model's architecture leveraged activation functions like ReLU for hidden layers and Sigmoid for the output to predict probabilities. The dataset was preprocessed through normalization, handling missing values, and encoding categorical variables (e.g., gender, geography). A train-test split ensured robust model evaluation,
+                    and performance was measured using metrics like accuracy, precision, recall, and the F1-score."
+                </p>
+                <p class="links">
+                    <a href="https://github.com/vaishnavi2231/Cusomer_Churn_Prediction">Github Link</a>
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Publication Item 2 -->
+        <div class="project">
+            <div class="video">
+                <!--<img src="img/finger.jpg" alt="Publication 2 Image">-->
+                <video autoplay muted loop width="300" controls>
+                    <source src="img/output_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="details">
+                <h2>Object Detection: Finger Count Project using OpenCV</h2>
+                <p>
+                    The Finger Count project is a computer vision application that uses OpenCV and MediaPipe to detect and count the number of fingers raised by a hand in real-time. The project leverages MediaPipe’s Hand Tracking solution, which provides efficient and accurate hand landmark detection. The input is a live video feed captured from a webcam, which is processed frame by frame. MediaPipe detects the hand landmarks (21 points on each hand), enabling identification of individual fingers.
+
+The logic for counting fingers is based on the relative positions of the landmarks, such as checking whether a fingertip is above or below its corresponding knuckle point. OpenCV is used for preprocessing the video frames, such as resizing, drawing landmarks, and displaying the output. The application can count fingers for both hands and display the count dynamically on the screen. It works efficiently under different lighting conditions and for varying hand orientations.
+                </p>
+                <p class="links">
+                    <a href="https://github.com/vaishnavi2231/FingerCounterProject">Github Link</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Publication Item 3 -->
+        <div class="project">
+            <div class="image">
+                <img src="img/faceDetection.png" alt="Publication 2 Image">
+            </div>
+            <div class="details">
+                <h2>Object Detection: Face and Hand Detection using OpenCV</h2>
+                <p>
+                    The Face, Eyes, and Palm Detection project is a computer vision application that uses Haar Cascade Classifiers to detect faces, eyes, and palms in real-time video streams or static images. Haar cascades are pre-trained classifiers that scan images at multiple scales to detect objects based on patterns of features like edges and textures. For this project, separate pre-trained Haar cascade models are used for face, eye, and palm detection.
+
+The input to the system is a live webcam feed or an image, which is processed frame by frame. The face is detected first, and within the face region, the eyes are located to improve precision. Simultaneously, the entire frame is analyzed to detect palms, which are typically located away from the face. Bounding boxes are drawn around the detected regions (face, eyes, and palms) for visualization.
+                </p>
+                <p class="links">
+                    <a href="https://github.com/vaishnavi2231/Face-and-Hand-Detection">Github Link</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
