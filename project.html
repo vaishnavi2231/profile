@@ -22,66 +22,223 @@
         </div>
     </header>
 
-<div class="containerProject">
-        <h1>Projects</h1>
+<!-- Projects Page -->
+  <main class="proj-wrap">
+    <div class="proj-header">
+      <h1>Projects</h1>
+      <div class="proj-filters" id="projFilters">
+        <button class="pf-btn active" data-filter="all">All</button>
+        <button class="pf-btn" data-filter="ai">AI & ML</button>
+        <button class="pf-btn" data-filter="rl">RL</button>
+        <button class="pf-btn" data-filter="cv">Computer Vision</button>
+      </div>
+    </div>
 
-        <div class="project">
-            <div class="image">
-                <img src="img/Customer1.png" alt="Publication 1 Image">
-            </div>
-            <div class="details">
-                <h2>Artificial Neural Network: Bank Customer Churn Prediction Analysis using Deep Learning</h2>
-                <p>
-                  The Bank Customer Churn Prediction project aims to identify customers likely to leave the bank, enabling proactive retention strategies. The dataset includes features such as customer demographics,
-                    credit score, account balance, and tenure with the bank. An Artificial Neural Network model was implemented using a Sequential neural network with two hidden layers to classify customers as "churning" or "non-churning.
-                     The model's architecture leveraged activation functions like ReLU for hidden layers and Sigmoid for the output to predict probabilities. The dataset was preprocessed through normalization, handling missing values, and encoding categorical variables (e.g., gender, geography). A train-test split ensured robust model evaluation,
-                    and performance was measured using metrics like accuracy, precision, recall, and the F1-score."
-                </p>
-                <p class="links">
-                    <a href="https://github.com/vaishnavi2231/Cusomer_Churn_Prediction">Github Link</a>
-                </p>
-
-            </div>
+    <section class="proj-grid" id="projGrid">
+      <!-- Card 1 — Customer churn project -->
+      <article class="proj-card" data-category="ai">
+        <div class="pc-media">
+          <img src="img/Customer1.png" alt="Bank Churn Project" />
         </div>
-
-        <!-- Publication Item 2 -->
-        <div class="project">
-            <div class="video">
-                <!--<img src="img/finger.jpg" alt="Publication 2 Image">-->
+        <div class="pc-body">
+          <div class="pc-title-row">
+            <h3>Bank Customer Churn Prediction</h3>
+            <!--<span class="pc-badge">Featured</span> -->
+          </div>
+          <p class="pc-desc">
+            The Bank Customer Churn Prediction project aims to identify customers likely to leave the bank, enabling proactive retention strategies. 
+            An Artificial Neural Network model was implemented using a Sequential neural network 
+            with two hidden layers to classify customers as "churning" or "non-churning.
+          </p>
+          <div class="pc-chips">
+            <span class="pc-chip">Python</span>
+            <span class="pc-chip">Numpy</span>
+            <span class="pc-chip">Pandas</span>
+            <span class="pc-chip">Scikit-Learn</span>
+            <span class="pc-chip">Neural Networks</span>
+            <span class="pc-chip">TensorFlow/Keras</span>
+          </div>
+          <div class="pc-actions">
+            <a class="pc-btn" href="https://github.com/vaishnavi2231/Cusomer_Churn_Prediction" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+       <!--------------------------------------------------------------------------------------------------------->
+      <!-- Card 2 — New Recomendation project -->
+      <article class="proj-card" data-category="rl">
+        <div class="pc-media">
+          <img src="img/proj_news.jpg"/>
+        </div>
+        <div class="pc-body">
+          <div class="pc-title-row">
+            <h3>News Recommendation System using Reinforcement Learning</h3>
+            <!--<span class="pc-badge">Research</span>-->
+          </div>
+          <p class="pc-desc">
+            Designed and implemented a real-time news recommendation system using DQN and A2C on the MIND dataset. Utilized vector embedding (TF-IDF, GloVe) and 
+            context-aware features for user-article representation, enabling accurate content personalization and long-term engagement prediction.
+          </p>
+          <div class="pc-chips">
+            <span class="pc-chip">Python</span>
+            <span class="pc-chip">Deep Q-Network</span>
+            <span class="pc-chip">Actor-Critic Algorithm</span>
+            <span class="pc-chip">Vector Embedding</span>
+            <span class="pc-chip">Tokenization</span>
+            <span class="pc-chip">Lemmatization</span>
+          </div>
+          <div class="pc-actions">
+            <a class="pc-btn" href="https://github.com/vaishnavi2231/News-Recommendation-System-using-Reinforcement-Learning/tree/main" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+     <!--------------------------------------------------------------------------------------------------------->
+      <!-- Card 3 — Parking Detection -->
+      <article class="proj-card" data-category="cv">
+        <div class="pc-media">
+          <img src="img/proj_parking.png" alt="Portfolio Site" />
+        </div>
+        <!--<div class="video">
                 <video autoplay muted loop width="300" controls>
-                    <source src="img/output_video.mp4" type="video/mp4">
+                    <source src="img/proj_parking_video.mp4" type="video/mp4">
+                </video>-->
+        </div>
+        <div class="pc-body">
+          <div class="pc-title-row">
+            <h3>ParkSmart Computer Vision Parking Availability System</h3>
+          </div>
+          <p class="pc-desc">
+            A real-time parking occupancy detection system built with OpenCV and Machine Learning (SVM). The project processes parking lot surveillance video, 
+            detects whether each parking spot is occupied or vacant, and overlays results directly on the live video feed.
+          </p>
+          <div class="pc-chips">
+            <span class="pc-chip">Python</span>
+            <span class="pc-chip"> OpenCV</span>
+            <span class="pc-chip">scikit-learn</span>
+            <span class="pc-chip">NumPy</span>
+            <span class="pc-chip">Matplotlib</span>
+            <span class="pc-chip">Support Vector Machine (SVM)</span>
+            <span class="pc-chip">GridSearchCV</span>
+            <span class="pc-chip">Graph:Connected components</span>
+          </div>
+          <div class="pc-actions">
+            <a class="pc-btn" href="https://github.com/vaishnavi2231/ParkSmart-Computer-Vision-Parking-Availability-System" target="_blank" rel="noopener">Github</a>
+          </div>
+        </div>
+      </article>
+      <!--------------------------------------------------------------------------------------------------------->
+      <!-- Card 4 — Object Detection :  Finger counter -->
+      <article class="proj-card" data-category="cv">
+        <!-- <div class="pc-media">
+          <img src="img/project-retail.jpg" alt="Retail Analytics" />
+        </div> -->
+        <div class="video">
+                <!--<img src="img/finger.jpg" alt="Publication 2 Image">-->
+                <video autoplay muted loop  controls>
+                    <source src="img/proj_finger_video.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="details">
-                <h2>Object Detection: Finger Count Project using OpenCV</h2>
-                <p>
-                    The Finger Count project is a computer vision application that uses OpenCV and MediaPipe to detect and count the number of fingers raised by a hand in real-time. The project leverages MediaPipe’s Hand Tracking solution, which provides efficient and accurate hand landmark detection. The input is a live video feed captured from a webcam, which is processed frame by frame. MediaPipe detects the hand landmarks (21 points on each hand), enabling identification of individual fingers.
-
-The logic for counting fingers is based on the relative positions of the landmarks, such as checking whether a fingertip is above or below its corresponding knuckle point. OpenCV is used for preprocessing the video frames, such as resizing, drawing landmarks, and displaying the output. The application can count fingers for both hands and display the count dynamically on the screen. It works efficiently under different lighting conditions and for varying hand orientations.
-                </p>
-                <p class="links">
-                    <a href="https://github.com/vaishnavi2231/FingerCounterProject">Github Link</a>
-                </p>
-            </div>
+        <div class="pc-body">
+          <div class="pc-title-row">
+            <h3>Object Detection: Finger Count Project using OpenCV</h3>
+          </div>
+          <p class="pc-desc">
+            The Finger Count project is a computer vision application that uses OpenCV and MediaPipe to detect and count the number of fingers raised by a hand in real-time.
+            OpenCV is used for preprocessing the video frames, such as resizing, drawing landmarks, and displaying the output.
+          </p>
+          <div class="pc-chips">
+            <span class="pc-chip">Python</span>
+            <span class="pc-chip"> OpenCV</span>
+            <span class="pc-chip">Haar cascade classifier</span>
+            <span class="pc-chip">YOLO</span>
+            <span class="pc-chip">Mediapipe</span>
+            <span class="pc-chip">handDetector </span>
+     
+          </div>
+          <div class="pc-actions">
+            <a class="pc-btn" href="https://github.com/vaishnavi2231/FingerCounterProject" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
+      </article>
 
-        <!-- Publication Item 3 -->
-        <div class="project">
-            <div class="image">
-                <img src="img/faceDetection.png" alt="Publication 2 Image">
-            </div>
-            <div class="details">
-                <h2>Object Detection: Face and Hand Detection using OpenCV</h2>
-                <p>
-                    The Face, Eyes, and Palm Detection project is a computer vision application that uses Haar Cascade Classifiers to detect faces, eyes, and palms in real-time video streams or static images. Haar cascades are pre-trained classifiers that scan images at multiple scales to detect objects based on patterns of features like edges and textures. For this project, separate pre-trained Haar cascade models are used for face, eye, and palm detection.
-
-The input to the system is a live webcam feed or an image, which is processed frame by frame. The face is detected first, and within the face region, the eyes are located to improve precision. Simultaneously, the entire frame is analyzed to detect palms, which are typically located away from the face. Bounding boxes are drawn around the detected regions (face, eyes, and palms) for visualization.
-                </p>
-                <p class="links">
-                    <a href="https://github.com/vaishnavi2231/Face-and-Hand-Detection">Github Link</a>
-                </p>
-            </div>
+      <!--------------------------------------------------------------------------------------------------------->
+      <!-- Card 5 — Facial Emotion Recognition using Deep Learning -->
+      <article class="proj-card" data-category="cv">
+        <div class="pc-media">
+          <img src="img/proj_emotion.jpg" width=10 height=10/>
         </div>
-    </div>
+        <div class="pc-body">
+          <div class="pc-title-row">
+            <h3>Facial Emotion Recognition using Deep Learning</h3>
+          </div>
+          <p class="pc-desc">
+            Developed a Facial Emotion Recognition (FER) system on the FER-2013 dataset to classify emotions, addressing challenges of low resolution and noisy facial images.
+            Trained and optimized Convolutional Neural Network (CNN) models and fine-tuned pretrained architectures to achieve improved classification accuracy.
+          </p>
+          <div class="pc-chips">
+            <span class="pc-chip">Python</span>
+            <span class="pc-chip"> Numpy</span>
+            <span class="pc-chip">Pandas</span>
+            <span class="pc-chip">TensorFlow</span>
+            <span class="pc-chip">Keras</span>
+            <span class="pc-chip">Image PreProcessing</span>
+            <span class="pc-chip">CNN</span>
+            <span class="pc-chip">Deep Learning </span>
+     
+          </div>
+          <div class="pc-actions">
+            <a class="pc-btn" href="https://github.com/vaishnavi2231/Facial-Emotion-Recognition-using-Deep-Learning" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!--------------------------------------------------------------------------------------------------------->
+      <!-- Card 6 — Object Detection: Face and Hand Detection using OpenCV -->
+      <article class="proj-card" data-category="cv">
+        <div class="pc-media">
+          <img src="img/faceDetection.png" style="width:250px; height:200px;margin-left: 60px;"/>
+        </div>
+        <div class="pc-body">
+          <div class="pc-title-row">
+            <h3>Object Detection: Face and Hand Detection using OpenCV</h3>
+          </div>
+          <p class="pc-desc">
+            The Face, Eyes, and Palm Detection project is a computer vision application that uses Haar Cascade Classifiers to detect faces, eyes, 
+            and palms in real-time video streams or static images. Haar cascades are pre-trained classifiers that scan images at multiple scales to detect objects 
+            based on patterns of features like edges and textures.
+          </p>
+          <div class="pc-chips">
+            <span class="pc-chip">Python</span>
+            <span class="pc-chip"> OpenCV</span>
+            <span class="pc-chip">Haar cascade classifier</span>
+            <span class="pc-chip">YOLO</span>
+            <span class="pc-chip">Mediapipe</span>
+            <span class="pc-chip">handDetector </span>
+     
+          </div>
+          <div class="pc-actions">
+            <a class="pc-btn" href="https://github.com/vaishnavi2231/Face-and-Hand-Detection" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.pf-btn');
+    const cards = document.querySelectorAll('.proj-card');
+
+    filterBtns.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        filterBtns.forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(c=>{
+          const cat = c.dataset.category;
+          c.style.display = (f==='all' || f===cat) ? '' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
